@@ -85,35 +85,25 @@
         <article class="card">
             <div class="card-icon">🌐</div>
             <h3>Website Development</h3>
-            <p>
-                Modern websites for personal brands, creators,
-                and businesses.
-            </p>
+            <p>Modern websites for personal brands, creators, and businesses.</p>
         </article>
 
         <article class="card">
             <div class="card-icon">📱</div>
             <h3>Mobile Applications</h3>
-            <p>
-                Useful mobile app ideas designed to solve
-                everyday problems.
-            </p>
+            <p>Useful mobile app ideas designed to solve everyday problems.</p>
         </article>
 
         <article class="card">
             <div class="card-icon">🎮</div>
             <h3>Game Development</h3>
-            <p>
-                Creative game concepts and interactive experiences.
-            </p>
+            <p>Creative game concepts and interactive experiences.</p>
         </article>
 
         <article class="card">
             <div class="card-icon">⚙️</div>
             <h3>Software Solutions</h3>
-            <p>
-                Digital tools designed to help people and businesses.
-            </p>
+            <p>Digital tools designed to help people and businesses.</p>
         </article>
 
     </div>
@@ -128,26 +118,19 @@
 
         <article class="card">
             <h3>My First Website</h3>
-            <p>
-                This portfolio website, built while learning
-                HTML, CSS, and JavaScript.
-            </p>
+            <p>This portfolio website, built while learning HTML, CSS, and JavaScript.</p>
             <span class="project-status">Learning Project</span>
         </article>
 
         <article class="card">
             <h3>Mobile App Ideas</h3>
-            <p>
-                Future experiments in mobile application development.
-            </p>
+            <p>Future experiments in mobile application development.</p>
             <span class="project-status">Planned</span>
         </article>
 
         <article class="card">
             <h3>Game Development</h3>
-            <p>
-                Future experiments with game design and programming.
-            </p>
+            <p>Future experiments with game design and programming.</p>
             <span class="project-status">Planned</span>
         </article>
 
@@ -160,10 +143,7 @@
     <h2>Testimonials</h2>
 
     <div class="feedback-box">
-        <p>
-            Feedback from people who try my projects will be
-            featured here in the future.
-        </p>
+        <p>Feedback from people who try my projects will be featured here in the future.</p>
     </div>
 </section>
 
@@ -174,7 +154,7 @@
 
     <p>
         Have a question or an idea to discuss?
-        Fill in the form below, or contact us directly on WhatsApp.
+        Send us a message or contact us directly on WhatsApp.
     </p>
 
     <a href="https://wa.me/2348060991992?text=Hello%20EmmzyTech%20Studio%2C%20I%20want%20to%20discuss%20a%20project."
@@ -184,18 +164,44 @@
         Contact Us on WhatsApp
     </a>
 
-    <form id="contact-form" class="contact-form">
+    <!-- CONNECTED TO WEB3FORMS -->
+    <form id="contact-form"
+          class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST">
+
+        <input type="hidden"
+               name="access_key"
+               value="1d9b3304-b5cd-4c39-8785-747060a0dbd6">
+
+        <input type="hidden"
+               name="subject"
+               value="New message from EmmzyTech Studio">
+
+        <input type="hidden"
+               name="from_name"
+               value="EmmzyTech Studio Website">
+
         <label for="contact-name">Your name</label>
-        <input id="contact-name" name="name"
-            type="text" placeholder="Enter your name" required>
+        <input id="contact-name"
+               name="name"
+               type="text"
+               placeholder="Enter your name"
+               required>
 
         <label for="contact-email">Your email</label>
-        <input id="contact-email" name="email"
-            type="email" placeholder="Enter your email" required>
+        <input id="contact-email"
+               name="email"
+               type="email"
+               placeholder="Enter your email"
+               required>
 
         <label for="contact-message">Your message</label>
-        <textarea id="contact-message" name="message"
-            rows="5" placeholder="Write your message" required></textarea>
+        <textarea id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message"
+                  required></textarea>
 
         <button type="submit" class="button">Submit Message</button>
 
@@ -203,8 +209,7 @@
     </form>
 
     <p class="notice">
-        The contact form is a demonstration for now.
-        Use the WhatsApp button to contact us directly.
+        You can also contact EmmzyTech Studio directly through WhatsApp.
     </p>
 </section>
 
@@ -221,19 +226,18 @@
     <form id="signup-form" class="contact-form">
         <label for="signup-name">Your name</label>
         <input id="signup-name" name="name"
-            type="text" placeholder="Enter your name" required>
+               type="text" placeholder="Enter your name" required>
 
         <label for="signup-email">Email address</label>
         <input id="signup-email" name="email"
-            type="email" placeholder="Enter your email" required>
+               type="email" placeholder="Enter your email" required>
 
         <label for="signup-password">Create a password</label>
         <input id="signup-password" name="password"
-            type="password" minlength="8"
-            placeholder="At least 8 characters" required>
+               type="password" minlength="8"
+               placeholder="At least 8 characters" required>
 
         <button type="submit" class="button">Create Account</button>
-
         <p id="signup-message" role="status"></p>
     </form>
 
@@ -242,14 +246,13 @@
     <form id="login-form" class="contact-form">
         <label for="login-email">Email address</label>
         <input id="login-email" name="email"
-            type="email" placeholder="Enter your email" required>
+               type="email" placeholder="Enter your email" required>
 
         <label for="login-password">Password</label>
         <input id="login-password" name="password"
-            type="password" placeholder="Enter your password" required>
+               type="password" placeholder="Enter your password" required>
 
         <button type="submit" class="button">Log In</button>
-
         <p id="login-message" role="status"></p>
     </form>
 
@@ -280,7 +283,7 @@
 
 <footer>
     <p>&copy; <span id="current-year">2026</span>
-        EmmzyTech Studio. All rights reserved.</p>
+       EmmzyTech Studio. All rights reserved.</p>
     <p>Learning today. Building tomorrow.</p>
 </footer>
 
