@@ -13,7 +13,7 @@ if (menuButton && navigation) {
     });
 }
 
-// 2. Close the mobile menu after selecting a link
+// 2. Close mobile menu after selecting a link
 if (navigation) {
     navigation.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
@@ -26,19 +26,19 @@ if (navigation) {
     });
 }
 
-// 3. Update the copyright year automatically
+// 3. Update copyright year
 const yearElement = document.querySelector("#current-year");
 
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
 
-// 4. Contact form validation
+// 4. Contact form - send messages using Web3Forms
 const contactForm = document.querySelector("#contact-form");
 const formMessage = document.querySelector("#form-message");
 
 if (contactForm && formMessage) {
-    contactForm.addEventListener("submit", function (event) {
+    contactForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
         if (!contactForm.checkValidity()) {
@@ -46,10 +46,52 @@ if (contactForm && formMessage) {
             return;
         }
 
-        formMessage.textContent =
-            "Your form looks complete, but message delivery has not been connected yet.";
+        const submitButton = contactForm.querySelector(
+            'button[type="submit"]'
+        );
 
-        formMessage.setAttribute("role", "status");
+        const originalButtonText = submitButton
+            ? submitButton.textContent
+            : "Submit Message";
+
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending...";
+        }
+
+        formMessage.textContent = "Sending your message...";
+
+        try {
+            const formData = new FormData(contactForm);
+
+            const response = await fetch(
+                "https://api.web3forms.com/submit",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                formMessage.textContent =
+                    "Your message was sent successfully! Thank you for contacting EmmzyTech Studio.";
+
+                contactForm.reset();
+            } else {
+                formMessage.textContent =
+                    "We couldn't send your message. Please check the form setup or contact us through WhatsApp.";
+            }
+        } catch (error) {
+            formMessage.textContent =
+                "A connection problem prevented your message from being sent. Please try again or use WhatsApp.";
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+            }
+        }
     });
 }
 
@@ -67,7 +109,7 @@ if (signupForm && signupMessage) {
         }
 
         signupMessage.textContent =
-            "The form is working, but account registration needs a secure authentication service.";
+            "Account registration is not available yet. A secure authentication service must be connected.";
 
         signupMessage.setAttribute("role", "status");
     });
@@ -87,7 +129,7 @@ if (loginForm && loginMessage) {
         }
 
         loginMessage.textContent =
-            "Login is not connected yet. A secure authentication service is required.";
+            "Login is not available yet. A secure authentication service must be connected.";
 
         loginMessage.setAttribute("role", "status");
     });
