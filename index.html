@@ -4,198 +4,258 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EmmzyTech Studio | Building the Digital Future</title>
+    <meta name="description" content="EmmzyTech Studio explores website development, mobile applications, games, and innovative software.">
 
-    <meta name="description" content="Welcome to EmmzyTech Studio, an aspiring software development studio exploring websites, mobile apps, games, and software.">
+    <title>EmmzyTech Studio | Digital Innovation</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <a href="#home" class="logo">EmmzyTech<span> Studio</span></a>
+<header class="site-header">
+    <a href="#home" class="logo">EmmzyTech<span> Studio</span></a>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">What We Build</a>
-            <a href="#projects">Projects</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <button id="menu-button" class="menu-button"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+    </button>
 
-    <main>
+    <nav id="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#account">Account</a>
+    </nav>
+</header>
 
-        <section id="home" class="hero">
-            <p class="tagline">WELCOME TO EMMZYTECH STUDIO</p>
+<main>
 
-            <h1>Building the <span>Digital Future</span></h1>
+<section id="home" class="hero reveal">
+    <p class="tagline">WELCOME TO EMMZYTECH STUDIO</p>
 
-            <p class="hero-text">
-                We are on a journey to create useful, creative, and
-                innovative digital experiences through websites,
-                mobile applications, games, and software.
-            </p>
+    <h1>Ideas Into <span>Digital Reality</span></h1>
 
-            <a href="#projects" class="button">Explore Our Projects</a>
-            <a href="#contact" class="button button-outline">Get in Touch</a>
-        </section>
+    <p class="hero-text">
+        Exploring technology and building towards a future of
+        creative websites, mobile applications, games, and software.
+    </p>
 
-        <section id="about" class="section">
-            <p class="tagline">GET TO KNOW US</p>
+    <a href="#projects" class="button">Explore Projects</a>
+    <a href="#contact" class="button button-outline">Contact Us</a>
+</section>
 
-            <h2>About EmmzyTech Studio</h2>
+<section id="about" class="section reveal">
+    <p class="tagline">WHO WE ARE</p>
+    <h2>About EmmzyTech Studio</h2>
 
+    <p>
+        EmmzyTech Studio is my vision for a software development brand.
+        I'm learning to code and developing my skills step by step.
+        My goal is to create useful digital products and explore
+        different areas of technology.
+    </p>
+
+    <p>
+        From websites and mobile apps to games and other software,
+        this is where my development journey begins.
+    </p>
+</section>
+
+<section id="services" class="section reveal">
+    <p class="tagline">WHAT WE WANT TO BUILD</p>
+    <h2>Our Areas of Interest</h2>
+
+    <div class="cards">
+
+        <article class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Website Development</h3>
             <p>
-                EmmzyTech Studio is my vision for a software development
-                brand focused on creativity, learning, and innovation.
-                I'm developing my skills step by step and working towards
-                building digital products that solve real-world problems.
+                Modern websites for personal brands, creators,
+                and businesses.
             </p>
+        </article>
 
+        <article class="card">
+            <div class="card-icon">📱</div>
+            <h3>Mobile Applications</h3>
             <p>
-                My long-term vision is to explore different areas of
-                technology, including web development, mobile applications,
-                game development, and other software solutions.
+                Useful mobile app ideas designed to solve
+                everyday problems.
             </p>
-        </section>
+        </article>
 
-        <section id="services" class="section">
-            <p class="tagline">OUR VISION</p>
-
-            <h2>What We Want to Build</h2>
-
-            <p class="section-intro">
-                Our goal is to explore different areas of software
-                development and turn creative ideas into useful products.
-            </p>
-
-            <div class="cards">
-
-                <article class="card">
-                    <div class="card-icon">🌐</div>
-                    <h3>Website Development</h3>
-                    <p>
-                        Modern, responsive websites for personal brands,
-                        creators, and businesses.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <div class="card-icon">📱</div>
-                    <h3>Mobile Applications</h3>
-                    <p>
-                        Mobile app ideas designed to make everyday
-                        tasks easier and more convenient.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <div class="card-icon">🎮</div>
-                    <h3>Game Development</h3>
-                    <p>
-                        Creative game concepts and interactive
-                        experiences for different audiences.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <div class="card-icon">💻</div>
-                    <h3>Software Solutions</h3>
-                    <p>
-                        Digital tools and software ideas that
-                        help people solve problems.
-                    </p>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <p class="tagline">OUR WORK</p>
-
-            <h2>Projects & Experiments</h2>
-
-            <p class="section-intro">
-                Every developer starts somewhere. This website is
-                the first step in my journey.
-            </p>
-
-            <div class="cards">
-
-                <article class="card project-card">
-                    <h3>My First Website</h3>
-                    <p>
-                        A personal portfolio website built while
-                        learning HTML and CSS.
-                    </p>
-                    <span class="project-status">In Progress</span>
-                </article>
-
-                <article class="card project-card">
-                    <h3>Future Mobile App</h3>
-                    <p>
-                        A space for a future mobile application
-                        project as my skills develop.
-                    </p>
-                    <span class="project-status">Planned</span>
-                </article>
-
-                <article class="card project-card">
-                    <h3>Future Game Project</h3>
-                    <p>
-                        A future game development project to
-                        explore interactive experiences.
-                    </p>
-                    <span class="project-status">Planned</span>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="testimonials" class="section">
-            <p class="tagline">FEEDBACK</p>
-
-            <h2>What People Say</h2>
-
+        <article class="card">
+            <div class="card-icon">🎮</div>
+            <h3>Game Development</h3>
             <p>
-                This section will feature genuine feedback from
-                people who try my projects or work with me.
+                Creative game concepts and interactive experiences.
             </p>
+        </article>
 
-            <div class="feedback-box">
-                <p>
-                    Testimonials will appear here as I complete
-                    projects and receive feedback.
-                </p>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <p class="tagline">LET'S CONNECT</p>
-
-            <h2>Have an Idea?</h2>
-
+        <article class="card">
+            <div class="card-icon">⚙️</div>
+            <h3>Software Solutions</h3>
             <p>
-                I'd love to keep learning, explore creative ideas,
-                and connect with people who are interested in technology.
+                Digital tools designed to help people and businesses.
             </p>
+        </article>
 
+    </div>
+</section>
+
+<section id="projects" class="section reveal">
+    <p class="tagline">OUR JOURNEY</p>
+    <h2>Projects & Experiments</h2>
+
+    <div class="cards">
+
+        <article class="card">
+            <h3>My First Website</h3>
             <p>
-                My contact details will be added here soon.
+                This portfolio website, built while learning
+                HTML, CSS, and JavaScript.
             </p>
+            <span class="project-status">Learning Project</span>
+        </article>
 
-            <a href="#home" class="button">Back to Top</a>
-        </section>
+        <article class="card">
+            <h3>Mobile App Ideas</h3>
+            <p>
+                Future experiments in mobile application development.
+            </p>
+            <span class="project-status">Planned</span>
+        </article>
 
-    </main>
+        <article class="card">
+            <h3>Game Development</h3>
+            <p>
+                Future experiments with game design and programming.
+            </p>
+            <span class="project-status">Planned</span>
+        </article>
 
-    <footer>
-        <p>&copy; 2026 EmmzyTech Studio. All rights reserved.</p>
-        <p>Learning today. Building tomorrow.</p>
-    </footer>
+    </div>
+</section>
+
+<section id="testimonials" class="section reveal">
+    <p class="tagline">COMMUNITY FEEDBACK</p>
+    <h2>Testimonials</h2>
+
+    <div class="feedback-box">
+        <p>
+            Feedback from people who try my projects will be
+            featured here in the future.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="section reveal">
+    <p class="tagline">LET'S CONNECT</p>
+    <h2>Contact EmmzyTech Studio</h2>
+
+    <p>
+        Have a question or an idea to discuss?
+        Fill in the form below.
+    </p>
+
+    <form id="contact-form" class="contact-form">
+        <label for="contact-name">Your name</label>
+        <input id="contact-name" name="name"
+            type="text" placeholder="Enter your name" required>
+
+        <label for="contact-email">Your email</label>
+        <input id="contact-email" name="email"
+            type="email" placeholder="Enter your email" required>
+
+        <label for="contact-message">Your message</label>
+        <textarea id="contact-message" name="message"
+            rows="5" placeholder="Write your message" required></textarea>
+
+        <button type="submit" class="button">Submit Message</button>
+
+        <p id="form-message" role="status"></p>
+    </form>
+
+    <p class="notice">
+        The contact form is currently a demonstration.
+        Message delivery will be connected later.
+    </p>
+</section>
+
+<section id="account" class="section reveal">
+    <p class="tagline">YOUR ACCOUNT</p>
+    <h2>Sign Up</h2>
+
+    <p>
+        This demonstration form shows the information a registration
+        page may request. It does not create a real account yet.
+    </p>
+
+    <form id="signup-form" class="contact-form">
+        <label for="signup-name">Your name</label>
+        <input id="signup-name" name="name"
+            type="text" placeholder="Enter your name" required>
+
+        <label for="signup-email">Email address</label>
+        <input id="signup-email" name="email"
+            type="email" placeholder="Enter your email" required>
+
+        <label for="signup-password">Create a password</label>
+        <input id="signup-password" name="password"
+            type="password" minlength="8"
+            placeholder="At least 8 characters" required>
+
+        <button type="submit" class="button">Create Account</button>
+
+        <p id="signup-message" role="status"></p>
+    </form>
+
+    <h2 class="account-heading">Log In</h2>
+
+    <form id="login-form" class="contact-form">
+        <label for="login-email">Email address</label>
+        <input id="login-email" name="email"
+            type="email" placeholder="Enter your email" required>
+
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password"
+            type="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="button">Log In</button>
+
+        <p id="login-message" role="status"></p>
+    </form>
+
+    <p class="notice">
+        Sign-up and login are not connected to a secure account system yet.
+        Do not enter a real password into this demonstration.
+    </p>
+</section>
+
+<section class="section work-section reveal">
+    <h2>Let's Build Something Great</h2>
+
+    <p>
+        EmmzyTech Studio is on a journey to turn ideas into
+        useful digital experiences.
+    </p>
+
+    <a href="#contact" class="button">Let's Talk</a>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year">2026</span>
+        EmmzyTech Studio. All rights reserved.</p>
+    <p>Learning today. Building tomorrow.</p>
+</footer>
 
 </body>
 </html>
