@@ -3,41 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EmmzyTech-studio | Software Engineer & Product Builder</title>
-<link rel="stylesheet" href="style.css">
+<title>EmmzyTech-studio | Software Engineer - Abuja, Nigeria</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#0a0f1a;color:white}
+nav{display:flex;justify-content:space-between;padding:20px 5%;align-items:center;border-bottom:1px solid #1a2332;position:sticky;top:0;background:#0a0f1a;z-index:100}
+.logo{color:#2cf6b3;font-weight:800;font-size:22px}
+.nav-links a{color:#94a3b8;margin-left:28px;text-decoration:none;font-size:14px}
+.btn-hire{background:#2cf6b3;color:#000!important;padding:10px 22px;border-radius:24px;font-weight:700!important}
+.hero{display:grid;grid-template-columns:1.1fr 0.9fr;padding:80px 5% 60px;gap:50px}
+.hero h2{font-size:52px;line-height:1.05;margin-bottom:18px;font-weight:800}
+.hero p{color:#94a3b8;margin-bottom:28px;max-width:520px}
+.btn-primary{background:#2cf6b3;color:#000;padding:14px 26px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block;margin-right:12px}
+.btn-outline{border:1.5px solid #2cf6b3;color:#2cf6b3;padding:13px 26px;border-radius:10px;text-decoration:none;display:inline-block}
+.label{color:#2cf6b3;font-size:12px;letter-spacing:2.5px;font-weight:700}
+.card{background:#121a2a;border:1px solid #1e3a3a;padding:22px;border-radius:14px;margin-top:16px}
+.portfolio,.about,.contact{padding:70px 5%}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.work-card{background:#121a2a;border:1px solid #1e3a3a;padding:18px;border-radius:14px}
+.about{display:grid;grid-template-columns:1.2fr 0.8fr;gap:50px;align-items:center;background:#0f172a;border-radius:24px;margin:0 2%}
+.contact{text-align:center;background:#0f172a;border-radius:24px;margin:40px 5%;padding:80px 5%}
+footer{text-align:center;padding:24px;color:#475569;font-size:13px;border-top:1px solid #1a2332}
+.whatsapp-float{position:fixed;bottom:26px;right:26px;background:#25D366;color:white;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;z-index:999}
+@media(max-width:900px){.hero,.about,.grid{grid-template-columns:1fr}.hero h2{font-size:36px}}
+</style>
 </head>
 <body>
-<header>
-  <nav>
-    <h1 class="logo">EmmzyTech-studio</h1>
-    <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-      <a href="https://wa.me/2348060991992" class="btn-hire">Hire Me</a>
-    </div>
-  </nav>
-</header>
+<nav>
+  <h1 class="logo">EmmzyTech-studio</h1>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="https://wa.me/2348060991992?text=Hello%20EmmzyTech-studio%2C%20I%20have%20a%20project" class="btn-hire">Hire Me</a>
+  </div>
+</nav>
 
 <section class="hero">
-  <div class="hero-text">
-    <h2>I Build Software That <br>Builds Businesses</h2>
-    <p>I'm EmmzyTech-studio — a Software Engineer & Product Builder. I build fast, modern websites, mobile apps, and custom software that helps businesses grow.</p>
-    <div class="hero-btns">
+  <div>
+    <h2>I Build Software That Builds Businesses</h2>
+    <p>I'm EmmzyTech-studio — a Software Engineer & Product Builder based in Abuja, Nigeria. I build fast, modern websites, mobile apps, and custom software that helps businesses grow.</p>
+    <div>
       <a href="#work" class="btn-primary">View Work →</a>
-      <a href="https://wa.me/2348060991992" class="btn-outline">↓ Chat on WhatsApp</a>
+      <a href="https://wa.me/2348060991992" class="btn-outline">Chat on WhatsApp</a>
     </div>
   </div>
-  <div class="hero-services" id="services">
+  <div>
     <span class="label">SERVICES</span>
-    <h3>What I Build</h3>
-    <div class="cards">
-      <div class="card"><h4>🌐 Web Development</h4><p>Responsive, performant websites built with React, Next.js, Tailwind CSS for businesses that want to scale.</p></div>
-      <div class="card"><h4>📱 Mobile App Development</h4><p>Cross-platform mobile apps for iOS and Android using React Native & Flutter.</p></div>
-      <div class="card"><h4>⚙️ Custom Software Solutions</h4><p>Scalable backend systems, APIs, and automation tools tailored to business needs.</p></div>
-    </div>
+    <h3 style="font-size:26px;margin:8px 0 0">What I Build</h3>
+    <div class="card"><h4>🌐 Web Development</h4><p style="color:#94a3b8;font-size:13.5px">High-performance business websites built with modern frameworks.</p></div>
+    <div class="card"><h4>📱 Mobile App Development</h4><p style="color:#94a3b8;font-size:13.5px">Cross-platform iOS & Android apps using React Native & Flutter.</p></div>
+    <div class="card"><h4>⚙️ Custom Software</h4><p style="color:#94a3b8;font-size:13.5px">Scalable backend systems, APIs and automation tools.</p></div>
   </div>
 </section>
 
@@ -45,42 +61,45 @@
   <span class="label">PORTFOLIO</span>
   <h2>Selected Work by EmmzyTech-studio</h2>
   <div class="grid">
-    <div class="work-card"><h4>E-commerce Dashboard</h4><p>SaaS • React • Stripe</p></div>
-    <div class="work-card"><h4>Fintech Mobile App</h4><p>Mobile • React Native • Payments</p></div>
-    <div class="work-card"><h4>SaaS Analytics Platform</h4><p>Data Viz • Node.js • PostgreSQL</p></div>
-    <div class="work-card"><h4>Logistics Automation</h4><p>Backend • AWS • Real-time</p></div>
+    <div class="work-card"><h4>E-commerce Dashboard</h4><p style="color:#64748b;font-size:12.5px">SaaS • React • Stripe</p></div>
+    <div class="work-card"><h4>Fintech Mobile App</h4><p style="color:#64748b;font-size:12.5px">Mobile • React Native • Payments</p></div>
+    <div class="work-card"><h4>SaaS Analytics Platform</h4><p style="color:#64748b;font-size:12.5px">Data Viz • Node.js • PostgreSQL</p></div>
+    <div class="work-card"><h4>Logistics Automation</h4><p style="color:#64748b;font-size:12.5px">Backend • AWS • Real-time</p></div>
   </div>
 </section>
 
 <section id="about" class="about">
   <div>
     <span class="label">ABOUT ME</span>
-    <h3>Building products with impact at EmmzyTech-studio.</h3>
-    <p>I'm a senior software engineer and product builder focused on crafting scalable software that drives growth for startups and businesses. 5+ years shipping production products from idea to launch.</p>
-    <div class="stats"><div><strong>50+</strong><span>Projects Shipped</span></div><div><strong>5+</strong><span>Years Experience</span></div><div><strong>20+</strong><span>Clients Worldwide</span></div></div>
+    <h3>Building products with impact from Abuja.</h3>
+    <p style="color:#94a3b8;margin-top:10px">I'm a software engineer and product builder at EmmzyTech-studio. I craft scalable software that drives growth for startups and businesses.</p>
   </div>
-  <div class="why-box">
+  <div style="background:#121a2a;border:1px solid #1e3a3a;padding:28px;border-radius:16px">
     <h3>Why work with EmmzyTech-studio?</h3>
-    <p>✓ Fast iteration & clean code</p>
+    <p style="margin-top:12px">✓ Fast iteration & clean code</p>
     <p>✓ Product-minded, business focus</p>
     <p>✓ Reliable, on-time delivery</p>
-    <p>✓ Direct WhatsApp Support</p>
+    <p>✓ Based in Abuja, working worldwide</p>
   </div>
 </section>
 
-<section id="contact" class="contact">
+<section class="contact">
   <span class="label">CONTACT</span>
   <h2>Let's build something great together.</h2>
-  <p>Have a project or idea? I'm open to freelance and full-time opportunities.</p>
-  <a href="https://wa.me/2348060991992?text=Hello%20EmmzyTech-studio%2C%20I%20want%20to%20build%20a%20project%20with%20you" class="btn-primary big">Let's Talk on WhatsApp →</a>
-  <p class="email">hello@emmzytech-studio.dev • +234 860 991 992 • Remote Worldwide</p>
+  <a href="https://wa.me/2348060991992?text=Hello%20EmmzyTech-studio%2C%20I%20want%20to%20build%20a%20project%20with%20you" class="btn-primary" style="margin-top:24px;font-size:18px;padding:16px 34px">Let's Talk on WhatsApp →</a>
+  <p style="margin-top:18px;color:#64748b;font-size:14px">Abuja, Nigeria • Remote Worldwide • +234 806 099 1992 • EmmzyTech-studio</p>
 </section>
 
-<footer>© 2025 EmmzyTech-studio. All rights reserved. | Built with ❤️ by EmmzyTech-studio</footer>
-
-<!-- Floating WhatsApp Button -->
+<footer>© 2025 EmmzyTech-studio, Abuja Nigeria. All rights reserved.</footer>
 <a href="https://wa.me/2348060991992" class="whatsapp-float">💬</a>
 
-<script src="script.js"></script>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    const h=a.getAttribute('href');
+    if(h.startsWith('#')&&h.length>1){e.preventDefault();document.querySelector(h)?.scrollIntoView({behavior:'smooth'})}
+  })
+})
+</script>
 </body>
 </html>
